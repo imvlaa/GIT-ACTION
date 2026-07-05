@@ -1,0 +1,13 @@
+name: first workflow
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  example-job:
+    runs-on: ubunto-latest
+    steps:
+      - name: print welcome massage background
+        run: echo "welcom to first "
