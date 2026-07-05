@@ -1,0 +1,14 @@
+name: First Workflow
+
+on:
+  push:
+    branches: ;
+      - main
+
+
+jobs:
+  ex-job:
+    runs-on: codespaces-prebuild
+    steps:
+      - name: print a welcome message background
+        run: echo "welcome to first gir action"
