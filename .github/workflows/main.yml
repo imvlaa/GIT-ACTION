@@ -11,3 +11,10 @@ jobs:
     steps:
       - name: print welcome massage background
         run: echo "welcom to first "
+
+      - name: checkout repository
+        uses: action/checkout@v4.2.2
+
+      - name: list repository files
+        run: ls -la
+    
